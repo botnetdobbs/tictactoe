@@ -1,0 +1,35 @@
+{
+  "name": "lazarusodhiambo/tictactoe",
+  "description": "A tic tac toe server that makes us",
+  "type": "project",
+  "authors": [
+      {
+          "name": "Lazarus Odhiambo",
+          "email": "lazarusodhis@gmail.com"
+      }
+  ],
+  "require": {
+    "silex/silex": "^2.0.4",
+    "monolog/monolog": "^1.22",
+    "symfony/http-foundation": "^3.0",
+    "symfony/http-kernel": "^3.0",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*",
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests"
+    ]
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit --testdox tests"
+  }
+}
